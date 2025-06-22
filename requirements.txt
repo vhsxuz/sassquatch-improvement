@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pydantic
+pandas
+numpy
+joblib
+bs4
+pyppeteer
+lxml
+xgboost==2.1.4
