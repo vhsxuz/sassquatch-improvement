@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "1273ac66-767f-4b99-bc76-bb432eeabb51",
+		"name": "SaaSquatch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42589731"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/health",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Score Leads",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "*/*"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"industry\": \"Technology\",\n  \"location\": \"California\",\n  \"page\": 1,\n  \"page_size\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sassquatch-improvement-production.up.railway.app/score-leads",
+					"protocol": "https",
+					"host": [
+						"sassquatch-improvement-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"score-leads"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
