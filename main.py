@@ -15,6 +15,7 @@ app = FastAPI()
 # CORS
 origins = [
     "http://localhost:3000",  # Add your frontend origin here
+    "https://lead-scout-lac.vercel.app",
 ]
 app.add_middleware(
     CORSMiddleware,
